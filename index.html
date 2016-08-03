@@ -9,5 +9,64 @@
 </head>
 <body>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <form role="form">
+                <div class="form-group">
+                    <h4>Book Author</h4>
+                    <input type="text" class="form-control" id="book-author" placeholder="Book Author">
+                </div>
+                <div class="form-group">
+                    <h4>Book Title</h4>
+                    <input type="text" class="form-control" id="book-title" placeholder="Book Title">
+                </div>
+                <div class="form-group">
+                    <h4>Book Description</h4>
+                    <input type="text" class="form-control" id="book-description" placeholder="Book Description">
+                </div>
+                <div class="form-group">
+                    <h4>Image URL</h4>
+                    <input type="text" class="form-control" id="img-url" placeholder="Image URL">
+                </div>
+                <div class="form-group">
+                    <h4>Number of Pages</h4>
+                    <input type="text" class="form-control" id="num-pages" placeholder="Number of Pages">
+                </div>
+                <div class="form-group">
+                    <h4>Minutes You Read Per Day</h4>
+                    <input type="text" class="form-control" id="min-day" placeholder="Minutes You Read Per Day">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script id="book-template" type="text/x-handlebars-template">
+
+
+            <h1>{{title}}</h1>
+            <p>{{description}}</p>
+            <h2>{{author}}</h2>
+            <img src="{{imgurl}}"/>
+            <p>{{numpages}}</p>
+            <p>{{minday}}</p>
+
+
+    </script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="present-book">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
